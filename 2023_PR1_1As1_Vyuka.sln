@@ -7,13 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Uvod-01-Hello-World", "0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Uvod-02-Konzole", "01-Uvod-02-Konzole\01-Uvod-02-Konzole.csproj", "{41A7E91F-04D7-4ED1-B625-A27502028AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Uvod-03-Skladani-retezcu", "01-Uvod-03-Skladani-retezcu\01-Uvod-03-Skladani-retezcu.csproj", "{504FB4A0-191D-4BF8-97A2-F63A5718680D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Uvod-03-Skladani-retezcu", "01-Uvod-03-Skladani-retezcu\01-Uvod-03-Skladani-retezcu.csproj", "{504FB4A0-191D-4BF8-97A2-F63A5718680D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Uvod-04-Cisla", "01-Uvod-04-Cisla\01-Uvod-04-Cisla.csproj", "{3FCA8F07-029D-40BC-8389-BCB3B861D779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Uvod-04-Cisla", "01-Uvod-04-Cisla\01-Uvod-04-Cisla.csproj", "{3FCA8F07-029D-40BC-8389-BCB3B861D779}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Uvod-05-Nacitani-cisla", "01-Uvod-05-Nacitani-cisla\01-Uvod-05-Nacitani-cisla.csproj", "{F78E95F1-FBF5-4871-AC74-E6BF8E026E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Uvod-05-Nacitani-cisla", "01-Uvod-05-Nacitani-cisla\01-Uvod-05-Nacitani-cisla.csproj", "{F78E95F1-FBF5-4871-AC74-E6BF8E026E98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Uvod-06-Znak", "01-Uvod-06-Znak\01-Uvod-06-Znak.csproj", "{800D24D2-EA97-4A78-BE92-11D9449F4FEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Uvod-06-Znak", "01-Uvod-06-Znak\01-Uvod-06-Znak.csproj", "{800D24D2-EA97-4A78-BE92-11D9449F4FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Uvod-07-Prumer", "01-Uvod-07-Prumer\01-Uvod-07-Prumer.csproj", "{35C03863-1275-4260-962D-9F15689B7BA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Uvod-08-Prohozeni", "01-Uvod-08-Prohozeni\01-Uvod-08-Prohozeni.csproj", "{CA841847-3ABB-4072-9CA7-B1AFD72048C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{800D24D2-EA97-4A78-BE92-11D9449F4FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{800D24D2-EA97-4A78-BE92-11D9449F4FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{800D24D2-EA97-4A78-BE92-11D9449F4FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C03863-1275-4260-962D-9F15689B7BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C03863-1275-4260-962D-9F15689B7BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C03863-1275-4260-962D-9F15689B7BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C03863-1275-4260-962D-9F15689B7BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA841847-3ABB-4072-9CA7-B1AFD72048C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA841847-3ABB-4072-9CA7-B1AFD72048C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA841847-3ABB-4072-9CA7-B1AFD72048C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA841847-3ABB-4072-9CA7-B1AFD72048C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

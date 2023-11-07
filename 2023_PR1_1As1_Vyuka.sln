@@ -67,11 +67,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-While", "03-While", "{1E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-06-Jak-dlouho-nepadne-sestka", "03-While-06-Jak-dlouho-nepadne-sestka\03-While-06-Jak-dlouho-nepadne-sestka.csproj", "{97A80E77-0CAD-4157-8D7A-9A147A6AFD64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-07-Odpocet", "03-While-07-Odpocet\03-While-07-Odpocet.csproj", "{26493DDE-3320-4EFA-A006-BA167AA005BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-07-Odpocet", "03-While-07-Odpocet\03-While-07-Odpocet.csproj", "{26493DDE-3320-4EFA-A006-BA167AA005BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-08-TryParse", "03-While-08-TryParse\03-While-08-TryParse.csproj", "{47ABFF3F-B735-4B87-9BCE-D5F99DD05821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-08-TryParse", "03-While-08-TryParse\03-While-08-TryParse.csproj", "{47ABFF3F-B735-4B87-9BCE-D5F99DD05821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-09-Nejmensi-z-deseti", "03-While-09-Nejmensi-z-deseti\03-While-09-Nejmensi-z-deseti.csproj", "{1D4F8717-4485-4DB5-AC4F-FE119CBE738D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-09-Nejmensi-z-deseti", "03-While-09-Nejmensi-z-deseti\03-While-09-Nejmensi-z-deseti.csproj", "{1D4F8717-4485-4DB5-AC4F-FE119CBE738D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-10-SOucet-v-intervalu", "03-While-10-SOucet-v-intervalu\03-While-10-SOucet-v-intervalu.csproj", "{C68CF62C-AB83-414E-B8E1-8A8300B91346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-11-Prumerny-hod-kostkou", "03-While-11-Prumerny-hod-kostkou\03-While-11-Prumerny-hod-kostkou.csproj", "{54180FF8-4EB9-4D07-A944-4C3894A79334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-12-Do-while", "03-While-12-Do-while\03-While-12-Do-while.csproj", "{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-13-while-true-a-break", "03-While-13-while-true-a-break\03-While-13-while-true-a-break.csproj", "{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -203,6 +211,22 @@ Global
 		{1D4F8717-4485-4DB5-AC4F-FE119CBE738D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D4F8717-4485-4DB5-AC4F-FE119CBE738D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4F8717-4485-4DB5-AC4F-FE119CBE738D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68CF62C-AB83-414E-B8E1-8A8300B91346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68CF62C-AB83-414E-B8E1-8A8300B91346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68CF62C-AB83-414E-B8E1-8A8300B91346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68CF62C-AB83-414E-B8E1-8A8300B91346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54180FF8-4EB9-4D07-A944-4C3894A79334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54180FF8-4EB9-4D07-A944-4C3894A79334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54180FF8-4EB9-4D07-A944-4C3894A79334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54180FF8-4EB9-4D07-A944-4C3894A79334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -239,6 +263,10 @@ Global
 		{26493DDE-3320-4EFA-A006-BA167AA005BD} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
 		{47ABFF3F-B735-4B87-9BCE-D5F99DD05821} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
 		{1D4F8717-4485-4DB5-AC4F-FE119CBE738D} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
+		{C68CF62C-AB83-414E-B8E1-8A8300B91346} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
+		{54180FF8-4EB9-4D07-A944-4C3894A79334} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
+		{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
+		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3D78E4C-E88F-4E41-9724-7C902E86554C}

@@ -73,13 +73,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-08-TryParse", "03-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-09-Nejmensi-z-deseti", "03-While-09-Nejmensi-z-deseti\03-While-09-Nejmensi-z-deseti.csproj", "{1D4F8717-4485-4DB5-AC4F-FE119CBE738D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-10-SOucet-v-intervalu", "03-While-10-SOucet-v-intervalu\03-While-10-SOucet-v-intervalu.csproj", "{C68CF62C-AB83-414E-B8E1-8A8300B91346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-10-SOucet-v-intervalu", "03-While-10-SOucet-v-intervalu\03-While-10-SOucet-v-intervalu.csproj", "{C68CF62C-AB83-414E-B8E1-8A8300B91346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-11-Prumerny-hod-kostkou", "03-While-11-Prumerny-hod-kostkou\03-While-11-Prumerny-hod-kostkou.csproj", "{54180FF8-4EB9-4D07-A944-4C3894A79334}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-11-Prumerny-hod-kostkou", "03-While-11-Prumerny-hod-kostkou\03-While-11-Prumerny-hod-kostkou.csproj", "{54180FF8-4EB9-4D07-A944-4C3894A79334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-12-Do-while", "03-While-12-Do-while\03-While-12-Do-while.csproj", "{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-12-Do-while", "03-While-12-Do-while\03-While-12-Do-while.csproj", "{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-13-while-true-a-break", "03-While-13-while-true-a-break\03-While-13-while-true-a-break.csproj", "{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-While-13-while-true-a-break", "03-While-13-while-true-a-break\03-While-13-while-true-a-break.csproj", "{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-14-Podle-parity", "03-While-14-Podle-parity\03-While-14-Podle-parity.csproj", "{C29690EC-A15C-4AC4-869D-143767EC9E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-While-15-Serie-sestek", "03-While-15-Serie-sestek\03-While-15-Serie-sestek.csproj", "{FE88DD09-3118-40F0-AB15-3B170D83D3AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -227,6 +231,14 @@ Global
 		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29690EC-A15C-4AC4-869D-143767EC9E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29690EC-A15C-4AC4-869D-143767EC9E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29690EC-A15C-4AC4-869D-143767EC9E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29690EC-A15C-4AC4-869D-143767EC9E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE88DD09-3118-40F0-AB15-3B170D83D3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE88DD09-3118-40F0-AB15-3B170D83D3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE88DD09-3118-40F0-AB15-3B170D83D3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE88DD09-3118-40F0-AB15-3B170D83D3AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -267,6 +279,8 @@ Global
 		{54180FF8-4EB9-4D07-A944-4C3894A79334} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
 		{2BE0AFC9-9070-4CE4-8847-012A2A9C4F68} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
 		{DEAB4E79-F6A9-4DFF-9225-5A322389E0C2} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
+		{C29690EC-A15C-4AC4-869D-143767EC9E90} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
+		{FE88DD09-3118-40F0-AB15-3B170D83D3AB} = {1E1199B2-7868-4EDB-9FC7-4A5E5D0D50F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3D78E4C-E88F-4E41-9724-7C902E86554C}

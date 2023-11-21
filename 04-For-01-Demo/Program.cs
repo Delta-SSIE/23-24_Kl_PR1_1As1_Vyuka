@@ -10,7 +10,7 @@
             //    Console.WriteLine(i);
             //    i++;
             //}
-            // i zůstane jako aktivní proměnná i po skončení cyklu
+            //i zůstane jako aktivní proměnná i po skončení cyklu
 
             for (int i = 0; i < 10; i++)
             {

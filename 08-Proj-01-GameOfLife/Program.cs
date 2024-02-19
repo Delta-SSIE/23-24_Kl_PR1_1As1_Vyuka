@@ -1,18 +1,25 @@
-﻿namespace _08_Proj_01_GameOfLife
+﻿using System.Runtime.InteropServices;
+
+namespace _08_Proj_01_GameOfLife
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            int sleep = 500; //milisekundy
+
             //bool[,] population = Initialize();
             bool[,] population = LoadFile("cells.txt");
+            //bool[,] population = LoadFile("corner.txt");
+            //bool[,] population = LoadFile("glider.txt");
             Render(population);
 
             //herní smyčka - zde nekonečná 
             while (true)
             {
                 //pauza
-                _ = Console.ReadKey(true);
+                //_ = Console.ReadKey(true);
+                System.Threading.Thread.Sleep(sleep);
 
                 population = NextGen(population);
                 Render(population);                
@@ -97,19 +104,18 @@
 
             return isAlive;
         }
-
         static void Render
         (
-            bool[,] mapa, 
-            char znakTrue = '#', 
-            char znakFalse = ' ', 
-            int cursorX = -1, 
+            bool[,] mapa,
+            char znakTrue = '#',
+            char znakFalse = ' ',
+            int cursorX = -1,
             int cursorY = -1
         )
         {
-            Console.Clear();
-
-            //Console.WriteLine("╔" + new string('═', mapa.GetLength(1)) + "╗");
+            //místo Console.Clear();
+            Console.SetCursorPosition(0, 0);
+            
             Console.WriteLine("╔" + string.Empty.PadRight(mapa.GetLength(1), '═') + "╗");
 
             for (int y = 0; y < mapa.GetLength(0); y++)
@@ -150,11 +156,19 @@
                     int sousedX = coordX + posunX;
                     int sousedY = coordY + posunY;
 
+                    if (sousedX < 0)
+                        sousedX += population.GetLength(1); //zleva se posunu na pravý kraj
+                    else if (sousedX >= population.GetLength(1))
+                        sousedX -= population.GetLength(1); //zprava se posunu doleva
+
+                    if (sousedY < 0)
+                        sousedY += population.GetLength(0); //zdola nahoru a naopak
+                    else if (sousedY >= population.GetLength(0))
+                        sousedY -= population.GetLength(0);
+
                     if
                     (
-                        sousedX >= 0 && sousedX < population.GetLength(1) //x je v pořádku
-                        && sousedY >= 0 && sousedY < population.GetLength(0) //y je v pořádku
-                        && (posunX != 0 || posunY != 0)
+                        (posunX != 0 || posunY != 0) //nejsem sám na sobě
                         && population[sousedY, sousedX] == true
                     )
                     {
@@ -165,5 +179,32 @@
 
             return pocet;
         }
+
+        //static int GetNeighbours(bool[,] population, int coordX, int coordY)
+        //{
+        //    int pocet = 0;
+
+        //    for (int posunY = -1; posunY <= 1; posunY++)
+        //    {
+        //        for (int posunX = -1; posunX <= 1; posunX++)
+        //        {
+        //            int sousedX = coordX + posunX;
+        //            int sousedY = coordY + posunY;
+
+        //            if
+        //            (
+        //                sousedX >= 0 && sousedX < population.GetLength(1) //x je v pořádku
+        //                && sousedY >= 0 && sousedY < population.GetLength(0) //y je v pořádku
+        //                && (posunX != 0 || posunY != 0)
+        //                && population[sousedY, sousedX] == true
+        //            )
+        //            {
+        //                pocet++;
+        //            }
+        //        }
+        //    }
+
+        //    return pocet;
+        //}
     }
 }

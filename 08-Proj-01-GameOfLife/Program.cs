@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            bool[,] population = Initialize();
+            //bool[,] population = Initialize();
+            bool[,] population = LoadFile("cells.txt");
             Render(population);
 
             //herní smyčka - zde nekonečná 
@@ -34,6 +35,26 @@
                 { false, false, false, false, false },
 
             };
+
+            return population;
+        }
+
+        static bool[,] LoadFile(string filename)
+        {
+            string[] lines = File.ReadAllLines(filename);
+            int height = lines.Length; //počet řádků = výška
+
+            int width = lines[0].Length; //počet sloupců = počet znaků v prvním řádku = šířka
+
+            bool[,] population = new bool[height, width];
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    char letter = lines[y][x];
+                    population[y, x] = (letter == '#'); 
+                }
+            }
 
             return population;
         }

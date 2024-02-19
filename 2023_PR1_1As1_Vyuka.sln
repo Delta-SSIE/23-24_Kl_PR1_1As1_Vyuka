@@ -165,11 +165,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-2D-Array-03-Max-radek", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-Array-10-opakovana-cisla", "05-Array-10-opakovana-cisla\05-Array-10-opakovana-cisla.csproj", "{DCF19D0D-AD1C-4BFA-9773-08EB60432872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "temp", "temp\temp.csproj", "{843655DA-0386-49AA-BFAF-2206663FE187}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "temp", "temp\temp.csproj", "{843655DA-0386-49AA-BFAF-2206663FE187}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-2D-Array-04-Vypis", "07-2D-Array-04-Vypis\07-2D-Array-04-Vypis.csproj", "{B723C545-7816-40BA-B82F-4229AF623D50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-2D-Array-04-Vypis", "07-2D-Array-04-Vypis\07-2D-Array-04-Vypis.csproj", "{B723C545-7816-40BA-B82F-4229AF623D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-2D-Array-Vypis-v-tabulce", "07-2D-Array-Vypis-v-tabulce\07-2D-Array-Vypis-v-tabulce.csproj", "{F3671360-1495-4D73-AE18-0C4E552009A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-2D-Array-Vypis-v-tabulce", "07-2D-Array-Vypis-v-tabulce\07-2D-Array-Vypis-v-tabulce.csproj", "{F3671360-1495-4D73-AE18-0C4E552009A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-2D-Array-06-Nahodne-rozmisteni", "07-2D-Array-06-Nahodne-rozmisteni\07-2D-Array-06-Nahodne-rozmisteni.csproj", "{094429FF-4EC3-4508-B71E-2F87619F39E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-2D-Array-07-Pocty-Sousedu", "07-2D-Array-07-Pocty-Sousedu\07-2D-Array-07-Pocty-Sousedu.csproj", "{C7E1AA7B-E3F9-4D41-A867-76BEE9D4D7E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-Proj-01-GameOfLife", "08-Proj-01-GameOfLife\08-Proj-01-GameOfLife.csproj", "{E646F36D-60D3-444F-A997-7EB69926ADE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -481,6 +487,18 @@ Global
 		{F3671360-1495-4D73-AE18-0C4E552009A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3671360-1495-4D73-AE18-0C4E552009A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3671360-1495-4D73-AE18-0C4E552009A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094429FF-4EC3-4508-B71E-2F87619F39E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094429FF-4EC3-4508-B71E-2F87619F39E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094429FF-4EC3-4508-B71E-2F87619F39E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094429FF-4EC3-4508-B71E-2F87619F39E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E1AA7B-E3F9-4D41-A867-76BEE9D4D7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E1AA7B-E3F9-4D41-A867-76BEE9D4D7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E1AA7B-E3F9-4D41-A867-76BEE9D4D7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E1AA7B-E3F9-4D41-A867-76BEE9D4D7E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E646F36D-60D3-444F-A997-7EB69926ADE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E646F36D-60D3-444F-A997-7EB69926ADE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E646F36D-60D3-444F-A997-7EB69926ADE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E646F36D-60D3-444F-A997-7EB69926ADE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -561,6 +579,8 @@ Global
 		{DCF19D0D-AD1C-4BFA-9773-08EB60432872} = {C0A6FBAE-3FDD-4499-91C7-2E4916667945}
 		{B723C545-7816-40BA-B82F-4229AF623D50} = {AB95B32D-4576-4542-AF58-5E1AC220C495}
 		{F3671360-1495-4D73-AE18-0C4E552009A9} = {AB95B32D-4576-4542-AF58-5E1AC220C495}
+		{094429FF-4EC3-4508-B71E-2F87619F39E3} = {AB95B32D-4576-4542-AF58-5E1AC220C495}
+		{C7E1AA7B-E3F9-4D41-A867-76BEE9D4D7E0} = {AB95B32D-4576-4542-AF58-5E1AC220C495}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3D78E4C-E88F-4E41-9724-7C902E86554C}

@@ -12,20 +12,78 @@ namespace _08_Proj_01_GameOfLife
             bool[,] population = LoadFile("cells.txt");
             //bool[,] population = LoadFile("corner.txt");
             //bool[,] population = LoadFile("glider.txt");
-            Render(population);
+
+            InteractiveEdit(population); //pozor, mění se pole tzv. in-place
 
             //herní smyčka - zde nekonečná 
             while (true)
             {
-                //pauza
-                //_ = Console.ReadKey(true);
+
                 System.Threading.Thread.Sleep(sleep);
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+                    if (keyInfo.Key == ConsoleKey.Enter)
+                        InteractiveEdit(population);
+                }
 
                 population = NextGen(population);
-                Render(population);                
+                Render(population);
             }
         }
-        
+
+        private static void InteractiveEdit(bool[,] population)
+        {
+            int cursorX = population.GetLength(1) / 2;
+            int cursorY = population.GetLength(0) / 2;
+
+            //smyčka, ve které se načítá, dokud nepřijde příkaz "konec"
+            while (true)
+            {
+                Render(population, cursorX, cursorY);
+
+                //načti klávesu
+                ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+                if (keyInfo.Key == ConsoleKey.LeftArrow)
+                {
+                    cursorX--;
+                    if (cursorX < 0)
+                        cursorX += population.GetLength(1);
+                }
+                else if (keyInfo.Key == ConsoleKey.RightArrow)
+                {
+                    cursorX++;
+                    if (cursorX >= population.GetLength(1))
+                        cursorX -= population.GetLength(1);
+
+                }
+                else if (keyInfo.Key == ConsoleKey.UpArrow)
+                {
+                    cursorY--;
+                    if (cursorY < 0)
+                        cursorY += population.GetLength(0);
+
+                }
+                else if (keyInfo.Key == ConsoleKey.DownArrow)
+                {
+                    cursorY++;
+                    if (cursorY >= population.GetLength(0))
+                        cursorY -= population.GetLength(0);
+                }
+                else if (keyInfo.Key == ConsoleKey.Spacebar)
+                {
+                    //přehodit bool na souřadnicích kurzoru
+                    population[cursorY, cursorX] = !population[cursorY, cursorX];
+                }
+                else if (keyInfo.Key == ConsoleKey.Q)
+                {
+                    //skonči s editací
+                    break;
+                }
+
+            }
+        }
+
         static bool[,] Initialize()
         {
             bool[,] population =
@@ -107,10 +165,10 @@ namespace _08_Proj_01_GameOfLife
         static void Render
         (
             bool[,] mapa,
-            char znakTrue = '#',
-            char znakFalse = ' ',
             int cursorX = -1,
-            int cursorY = -1
+            int cursorY = -1,
+            char znakTrue = '#',
+            char znakFalse = ' '
         )
         {
             //místo Console.Clear();

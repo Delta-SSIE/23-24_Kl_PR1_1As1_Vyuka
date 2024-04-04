@@ -19,17 +19,17 @@
 
 
             Ucet hypoteka = new Ucet();
-            ucet.Uloz(7_000_000);
+            hypoteka.Uloz(7_000_000);
 
             double ulozka = 40_000 * 12;
-            double urokovaMira2 = 6;
+            double urokovaMira2 = 6.2;
 
             n = 0;
-            while (ucet.Vyber(ulozka))
+            while (hypoteka.Vyber(ulozka))
             {
                 n++;
-                ucet.Urokuj(urokovaMira2);
-                Console.WriteLine($"{n}. rok - zůstatek {ucet.Zustatek}");
+                hypoteka.Urokuj(urokovaMira2);
+                Console.WriteLine($"{n}. rok - zůstatek {hypoteka.Zustatek}");
             }
 
             Console.WriteLine($"celkem zaplaceno {n * ulozka}");

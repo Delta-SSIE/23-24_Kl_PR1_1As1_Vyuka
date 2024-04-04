@@ -8,6 +8,15 @@
             //k.Polomer = 1;
             k.SetPolomer(1);
             Console.WriteLine($"Obsah kružníce o poloměru {k.GetPolomer()} je {k.Obsah()}");
+
+            try                
+            {
+                k.SetPolomer(-50);
+            }
+            catch
+            {
+                Console.WriteLine("Došlo k chybě při nastavení parametru");
+            }
         }
     }
 }

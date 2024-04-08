@@ -193,11 +193,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-OOP-02-Demo-Kruznice-1",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-OOP-03-Ctyrlistek", "11-OOP-03-Ctyrlistek\11-OOP-03-Ctyrlistek.csproj", "{74E5B5DE-EB50-463E-BF76-1523D6294EC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-OOP-04-Konstruktor_kruznice", "11-OOP-04-Konstruktor_kruznice\11-OOP-04-Konstruktor_kruznice.csproj", "{09560E91-39BE-4C35-B127-B668A9FFB8A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-OOP-04-Konstruktor_kruznice", "11-OOP-04-Konstruktor_kruznice\11-OOP-04-Konstruktor_kruznice.csproj", "{09560E91-39BE-4C35-B127-B668A9FFB8A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-OOP-05-Kruznice-property", "11-OOP-05-Kruznice-property\11-OOP-05-Kruznice-property.csproj", "{FF024F89-2ADD-489D-AE1E-5A211C01C4B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-OOP-05-Kruznice-property", "11-OOP-05-Kruznice-property\11-OOP-05-Kruznice-property.csproj", "{FF024F89-2ADD-489D-AE1E-5A211C01C4B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-OOP-06-Ucet", "11-OOP-06-Ucet\11-OOP-06-Ucet.csproj", "{3757DFA3-9D82-47F0-A786-9C54AC029482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-OOP-06-Ucet", "11-OOP-06-Ucet\11-OOP-06-Ucet.csproj", "{3757DFA3-9D82-47F0-A786-9C54AC029482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-OOP-07-Minesweeper", "11-OOP-07-Minesweeper\11-OOP-07-Minesweeper.csproj", "{5894515A-B28B-4B64-A2F1-CF259C08C5DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -557,6 +559,10 @@ Global
 		{3757DFA3-9D82-47F0-A786-9C54AC029482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3757DFA3-9D82-47F0-A786-9C54AC029482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3757DFA3-9D82-47F0-A786-9C54AC029482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5894515A-B28B-4B64-A2F1-CF259C08C5DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5894515A-B28B-4B64-A2F1-CF259C08C5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5894515A-B28B-4B64-A2F1-CF259C08C5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5894515A-B28B-4B64-A2F1-CF259C08C5DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -648,6 +654,7 @@ Global
 		{09560E91-39BE-4C35-B127-B668A9FFB8A4} = {491CF579-299F-45EB-B66B-54A8207D650D}
 		{FF024F89-2ADD-489D-AE1E-5A211C01C4B5} = {491CF579-299F-45EB-B66B-54A8207D650D}
 		{3757DFA3-9D82-47F0-A786-9C54AC029482} = {491CF579-299F-45EB-B66B-54A8207D650D}
+		{5894515A-B28B-4B64-A2F1-CF259C08C5DD} = {491CF579-299F-45EB-B66B-54A8207D650D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3D78E4C-E88F-4E41-9724-7C902E86554C}

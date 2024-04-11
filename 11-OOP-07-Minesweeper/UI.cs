@@ -24,7 +24,7 @@ namespace _11_OOP_07_Minesweeper
         {
             _width = width;
             _height = height;
-            Cursor = new Coords ( width / 2,  height / 2 );
+            Cursor = new Coords(width / 2, height / 2);
         }
 
         public void Render(Tile[,] tiles)
@@ -56,6 +56,7 @@ namespace _11_OOP_07_Minesweeper
                     Console.Write(_zeroChar);
             }
             else if (tile.HasFlag)
+
             {
                 Console.Write(_flagChar);
             }
@@ -107,6 +108,20 @@ namespace _11_OOP_07_Minesweeper
                         Cursor = new Coords(newX, Cursor.Y);
                         break;
                 }
+            }
+        }
+
+        public void ReportResult(VictoryState result)
+        {
+            Cursor = new Coords(0, _height + 2);
+            
+            if (result == VictoryState.Win)
+            {
+                Console.WriteLine("Jsi borec, všechny miny označeny");
+            }
+            else if (result == VictoryState.Loose)
+            {
+                Console.WriteLine("Na minu se nešlape, teď už je to jedno, ale pro příště...");
             }
         }
     }

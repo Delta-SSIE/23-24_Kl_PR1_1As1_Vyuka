@@ -34,7 +34,43 @@ namespace _11_OOP_07_Minesweeper
         /// </summary>        
         private void CountAllNeighbours()
         {
-            throw new NotImplementedException();
+            for (int y = 0; y < _height; y++)
+            {
+                for (int x = 0; x < _width; x++)
+                {
+                    CountTileNeighbours(x, y);
+                }
+            }
+        }
+
+        private void CountTileNeighbours(int x, int y)
+        {
+            int neighbourX, neighbourY;
+            int count = 0;
+
+            for (int dx = -1; dx <= 1; dx++)
+            {
+                for (int dy = -1; dy <= 1; dy++)
+                {
+                    if (dx == 0 && dy == 0)
+                        continue;
+
+                    neighbourX = x + dx;
+                    neighbourY = y + dy;
+
+                    if 
+                    (
+                        neighbourX >= 0
+                        && neighbourY >= 0
+                        && neighbourX < _width
+                        && neighbourY < _height
+                        && _board[neighbourY, neighbourX].IsMine
+                    )
+                        count++;
+                }
+            }
+
+            _board[y,x].Neighbours = count;
         }
 
         private void MakeBoard()

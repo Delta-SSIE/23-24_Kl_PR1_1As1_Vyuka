@@ -56,7 +56,6 @@ namespace _11_OOP_07_Minesweeper
                     Console.Write(_zeroChar);
             }
             else if (tile.HasFlag)
-
             {
                 Console.Write(_flagChar);
             }
@@ -64,6 +63,30 @@ namespace _11_OOP_07_Minesweeper
             {
                 Console.Write(_coveredChar);
             }
+        }
+
+        private void RenderTileCheat(Tile tile)
+        {
+            if (tile.HasFlag)
+            {
+                Console.Write(_flagChar);
+                return;
+            }
+
+            if (tile.IsUncovered)
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+            }
+
+
+            if (tile.IsMine)
+                Console.Write(_mineChar);
+            else if (tile.Neighbours > 0)
+                Console.Write(tile.Neighbours);
+            else
+                Console.Write(_zeroChar);
+
+            Console.BackgroundColor = ConsoleColor.Black;
         }
 
         public UserAction GetUserAction()
@@ -108,12 +131,13 @@ namespace _11_OOP_07_Minesweeper
                         Cursor = new Coords(newX, Cursor.Y);
                         break;
                 }
+                Console.SetCursorPosition(Cursor.X, Cursor.Y);
             }
         }
 
         public void ReportResult(VictoryState result)
         {
-            Cursor = new Coords(0, _height + 2);
+            Console.SetCursorPosition(0, _height + 2);
             
             if (result == VictoryState.Win)
             {

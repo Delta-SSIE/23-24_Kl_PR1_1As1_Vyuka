@@ -29,7 +29,7 @@
             //{
             //    Console.WriteLine(suda[i]); //funguje jako pole
             //}
-            suda.Ca
+
             return suda.ToArray();
         }
 

@@ -1,0 +1,11 @@
+Dvoøák - 2048
+Pecqueur Web - Next + Rust, zápisky
+Rozová - Knihovna, Databázovı systém
+Škrle - 2048 
+Felgr - Oko bere
+Stas - vlastní
+Beneda - Vlastní emacs/vim
+Rokos - Sudoku: Generátor zadání
+Balcar - Neuronová sí
+Kaška - Space invaders 
+Kholová - Test osobnosti
